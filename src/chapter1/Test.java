@@ -48,9 +48,29 @@ public class Test {
         // 同时当调用bark()方法时，由于子类重写了父类的bark()方法,所以调用子类中的bark()方法。
         //因此，向上转型，在运行时，会遗忘子类对象中与父类对象中不同的方法，也会覆盖与父类中相同的方法——重写。（方法名，参数都相同）
         dog1.bark();//执行 Dog 类的方法
-
-
         dog.dogType();
 
+        Integer x=5;//装箱，所以当内置数据类型被当作对象使用的时候，编译器会把内置类型装箱为包装类。
+        x=x+10;
+        System.out.println(x);
+
+        System.out.println("90 度的正弦值：" + Math.sin(Math.PI/2));
+        System.out.println("0度的余弦值：" + Math.cos(0));
+        System.out.println("60度的正切值：" + Math.tan(Math.PI/3));
+        System.out.println("1的反正切值： " + Math.atan(1));
+        System.out.println("π/2的角度值：" + Math.toDegrees(Math.PI/2));
+        System.out.println(Math.PI);
+
+
+        double[] nums={1.4,1.5,1.6,-1.4,-1.5,-1.6};
+        for(double num:nums){
+            test(num);
+        }
+
+    }
+    private static void test(double num){
+        System.out.println("Math.floor(" + num + ")=" + Math.floor(num));
+        System.out.println("Math.round(" + num + ")=" + Math.round(num));
+        System.out.println("Math.ceil(" + num + ")=" + Math.ceil(num));
     }
 }

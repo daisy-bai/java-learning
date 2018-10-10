@@ -20,6 +20,4 @@ public class CellPhone extends TelPhone{
         cp.message();
     }
 
-
-
 }
