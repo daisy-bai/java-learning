@@ -31,7 +31,7 @@ public class Main1 {
                 i++;
             }
             int b=num1%1000000;
-            a[move++] = Integer.parseInt(Integer.valueOf(b,8).toString());
+           // a[move++] = Integer.parseInt(Integer.valueOf(b,8).toString());
             System.out.println(a[0]);
 
         }
