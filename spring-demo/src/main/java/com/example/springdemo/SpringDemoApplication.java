@@ -12,10 +12,11 @@ public class SpringDemoApplication implements CommandLineRunner {
         SpringApplication.run(SpringDemoApplication.class, args);
     }
 
+    @Autowired
+    private Calculator calculator;
 
     @Override
     public void run(String... args) throws Exception {
-        Calculator calculator=new Calculator();
         System.out.println(calculator.calculate(1,"add",2));
         System.out.println(calculator.calculate(1,"jian",2));
         System.out.println(calculator.calculate(1,"cheng",2));
